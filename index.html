@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feral Pictures. Director-led production, Los Angeles</title>
+  <meta name="description" content="Feral is a director-led production company in Los Angeles. Real people, real places, ideas left untamed.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER: black blinds; one slab counts 000 to 100, turns edge-on, then the blinds fold open onto the hero -->
+<div class="loader" aria-hidden="true">
+  <div class="slats loader__slats"></div>
+  <div class="loader__plate plates" data-words="000" data-tag="Feral Pictures|loading|the reel"></div>
+  <p class="loader__foot lbl"><span>Feral Pictures</span><span>Director-led, Los Angeles</span></p>
+</div>
+
+<!-- CURSOR: grey dot; over a film it becomes a small slab ("Watch") that leans with the mouse -->
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__plate plates" data-words="Watch"></span></div>
+
+<header class="nav at-hero">
+  <a class="nav__logo plates" href="#top" data-plates="Feral|Pictures" aria-label="Feral Pictures, back to top"></a>
+  <div class="nav__right">
+    <a class="nav__link lbl" href="#contact" data-roll>Contact</a>
+    <button class="nav__menu plates" type="button" data-words="Menu" aria-expanded="false" aria-controls="menu" aria-label="Open menu"></button>
+  </div>
+</header>
+
+<!-- MENU: blinds close to black; the links are one row of touching slabs, like the hero wordmark.
+     Hovering a slab turns it flat to face you; the others step back. -->
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="slats menu__slats"></div>
+  <p class="menu__head lbl"><span>(Menu)</span><span>Five ways in</span></p>
+  <nav class="menu__list" aria-label="Menu">
+    <a href="#top"><span class="plates" data-plates="Work" data-tag="01|selected|films"></span></a>
+    <a href="#studio"><span class="plates" data-plates="Studio" data-tag="02|who|we are"></span></a>
+    <a href="#more"><span class="plates" data-plates="Index" data-tag="03|more|films"></span></a>
+    <a href="#directors"><span class="plates" data-plates="Directors" data-tag="04|the|roster"></span></a>
+    <a href="#contact"><span class="plates" data-plates="Contact" data-tag="05|say|hello"></span></a>
+  </nav>
+  <div class="menu__foot lbl"><a href="mailto:hello@feral.film" data-roll>hello@feral.film</a><span>Los Angeles, CA</span><a href="#" data-roll>Instagram</a></div>
+</div>
+
+<main>
+
+  <!-- 1. HERO: countdown, the WE ARE FERAL slabs hold the left; film cards ride in from the right,
+       the one passing the middle turns flat to its info side, and each card folds edge-on into the wordmark -->
+  <section class="hero" id="top">
+    <div class="hero__top">
+      <p class="hero__count" aria-label="Countdown to the next shoot"><span><b data-u="d">00</b><i class="lbl">Days</i></span><span><b data-u="h">00</b><i class="lbl">Hours</i></span><span><b data-u="m">00</b><i class="lbl">Minutes</i></span><span><b data-u="s">00</b><i class="lbl">Seconds</i></span></p>
+      <p class="hero__note lbl">Until we roll on the next one, in Lisbon.<br>Director-led pictures from Los Angeles.</p>
+    </div>
+    <div class="hero__stage">
+      <h1 class="hero__plates plates" data-plates="We|Are|Feral" data-tag="Feral Pictures|made in|Los Angeles" aria-label="We are Feral. Feral Pictures, Los Angeles"></h1>
+      <div class="hero__belt" id="work" aria-label="Selected work">
+        <article class="wcard" data-cursor="Watch" data-play="assets/video/cobbler.mp4" data-title="Hands That Remember" data-sub="Calzoleria Vero">
+          <div class="wcard__flip">
+            <div class="wcard__front"><video data-src="assets/video/cobbler.mp4" poster="assets/img/cobbler.webp" muted loop playsinline preload="none"></video></div>
+            <div class="wcard__back"><h3 class="wcard__t">Hands That Remember<br>Calzoleria Vero, 2026</h3><p class="wcard__meta lbl"><span><b>01</b>Film</span><span><b>26</b>Year</span></p><span class="wcard__go lbl">Heritage film, dir. Castell &rarr;</span></div>
+          </div>
+          <p class="wcard__cap lbl"><b>Hands That Remember</b><span>Calzoleria Vero</span></p>
+        </article>
+        <article class="wcard" data-cursor="Watch" data-play="assets/video/bball-moody.mp4" data-title="Second Half" data-sub="Courtwise">
+          <div class="wcard__flip">
+            <div class="wcard__front"><video data-src="assets/video/bball-moody.mp4" poster="assets/img/bball-moody.webp" muted loop playsinline preload="none"></video></div>
+            <div class="wcard__back"><h3 class="wcard__t">Second Half<br>Courtwise, 2026</h3><p class="wcard__meta lbl"><span><b>02</b>Film</span><span><b>26</b>Year</span></p><span class="wcard__go lbl">Commercial, dir. Okafor &rarr;</span></div>
+          </div>
+          <p class="wcard__cap lbl"><b>Second Half</b><span>Courtwise</span></p>
+        </article>
+        <article class="wcard" data-cursor="Watch" data-play="assets/video/sparks.mp4" data-title="Molten" data-sub="Arcwell Steel">
+          <div class="wcard__flip">
+            <div class="wcard__front"><video data-src="assets/video/sparks.mp4" poster="assets/img/sparks.webp" muted loop playsinline preload="none"></video></div>
+            <div class="wcard__back"><h3 class="wcard__t">Molten<br>Arcwell Steel, 2025</h3><p class="wcard__meta lbl"><span><b>03</b>Film</span><span><b>25</b>Year</span></p><span class="wcard__go lbl">Brand film, dir. Lindqvist &rarr;</span></div>
+          </div>
+          <p class="wcard__cap lbl"><b>Molten</b><span>Arcwell Steel</span></p>
+        </article>
+        <article class="wcard" data-cursor="Watch" data-play="assets/video/bluehat.mp4" data-title="Blue Hour" data-sub="Atelier Okoro">
+          <div class="wcard__flip">
+            <div class="wcard__front"><video data-src="assets/video/bluehat.mp4" poster="assets/img/bluehat.webp" muted loop playsinline preload="none"></video></div>
+            <div class="wcard__back"><h3 class="wcard__t">Blue Hour<br>Atelier Okoro, 2025</h3><p class="wcard__meta lbl"><span><b>04</b>Film</span><span><b>25</b>Year</span></p><span class="wcard__go lbl">Fashion film, dir. Varga &rarr;</span></div>
+          </div>
+          <p class="wcard__cap lbl"><b>Blue Hour</b><span>Atelier Okoro</span></p>
+        </article>
+      </div>
+    </div>
+    <div class="hero__foot lbl"><span>&copy;2026 Feral Pictures</span><a href="#" data-play="assets/video/reel.mp4" data-title="Feral" data-sub="Showreel 2026" data-roll>Play the reel, sound on</a><span class="hero__prog" aria-hidden="true"><span><b>01</b></span><i><s></s></i><span>04</span></span><span>Footage: Pexels</span></div>
+  </section>
+
+  <!-- 2. STUDIO: section head + scroll-lit statement, italic serif phrases -->
+  <section class="state" id="studio">
+    <div class="sec-head"><p class="lbl">(01) Studio</p><p class="sec-head__t">Wild ideas. Real <i>pictures.</i></p><p class="lbl">Est. 2014</p></div>
+    <div class="state__grid">
+      <a class="tile state__tile" href="#" data-cursor="Play" data-play="assets/video/reel.mp4" data-title="Feral" data-sub="Showreel 2026">
+        <span class="tile__media"><video data-src="assets/video/reel.mp4" poster="assets/img/reel.webp" muted loop playsinline preload="none"></video></span>
+        <span class="tile__cap"><em>Showreel 2026, sound on</em><b>Twenty-two seconds, no cages</b></span>
+      </a>
+      <div class="state__body">
+        <p class="lit">We&rsquo;re Feral, a Los Angeles director-led production company built for <mark>stories that bite back.</mark></p>
+        <p class="lit">We cast real people, shoot in real places and <mark>refuse to tame</mark> the idea. Then we stay in the edit until it hurts a little.</p>
+        <ul class="state__list lbl"><li>Commercials</li><li>Branded film</li><li>Music video</li><li>Fashion</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. MANIFESTO: fitted lines, footage cut into the gaps -->
+  <section class="mani" aria-label="Manifesto">
+    <h2 class="mani__lines" aria-label="Nobody puts us in a box. We shoot what bites back.">
+      <span class="ml fitline" aria-hidden="true"><span class="ml__in"><span class="g">Nobody</span><span class="s">puts</span></span></span>
+      <span class="ml fitline" aria-hidden="true"><span class="ml__in"><span class="g">us</span><span class="clip"><video data-src="assets/video/horses-water.mp4" poster="assets/img/horses-water.webp" muted loop playsinline preload="none"></video></span><span class="s">in a</span></span></span>
+      <span class="ml fitline" aria-hidden="true"><span class="ml__in"><span class="g">box.</span><span class="clip"><video data-src="assets/video/sparks-sil.mp4" poster="assets/img/sparks-sil.webp" muted loop playsinline preload="none"></video></span></span></span>
+      <span class="ml fitline" aria-hidden="true"><span class="ml__in"><span class="clip"><video data-src="assets/video/skyscrapers.mp4" poster="assets/img/skyscrapers.webp" muted loop playsinline preload="none"></video></span><span class="s">we</span><span class="g">shoot</span></span></span>
+      <span class="ml fitline" aria-hidden="true"><span class="ml__in"><span class="s">what</span><span class="g">bites</span></span></span>
+      <span class="ml fitline" aria-hidden="true"><span class="ml__in"><span class="g">back.</span><span class="clip"><video data-src="assets/video/necklace.mp4" poster="assets/img/necklace.webp" muted loop playsinline preload="none"></video></span></span></span>
+    </h2>
+  </section>
+
+  <!-- 4. INDEX: staggered grid, italic client over title -->
+  <section class="more" id="more" aria-label="More work">
+    <div class="sec-head"><p class="lbl">(02) Index</p><p class="sec-head__t">More films, same <i>appetite.</i></p><p class="lbl">06 films</p></div>
+    <div class="mosaic">
+      <a class="tile tile--a" href="#" data-cursor="Watch" data-play="assets/video/emotional.mp4" data-title="The Long Way Home" data-sub="Hearthline">
+        <span class="tile__media"><video data-src="assets/video/emotional.mp4" poster="assets/img/emotional.webp" muted loop playsinline preload="none"></video></span>
+        <span class="tile__cap"><em>Hearthline</em><b>The Long Way Home</b></span>
+      </a>
+      <a class="tile tile--b" href="#" data-cursor="Watch" data-play="assets/video/boxer.mp4" data-title="Twelve Rounds" data-sub="Kinetik">
+        <span class="tile__media"><video data-src="assets/video/boxer.mp4" poster="assets/img/boxer.webp" muted loop playsinline preload="none"></video></span>
+        <span class="tile__cap"><em>Kinetik</em><b>Twelve Rounds</b></span>
+      </a>
+      <a class="tile tile--c" href="#" data-cursor="Watch" data-play="assets/video/skate-sun.mp4" data-title="Red Deck" data-sub="Vela Skateboards">
+        <span class="tile__media"><video data-src="assets/video/skate-sun.mp4" poster="assets/img/skate-sun.webp" muted loop playsinline preload="none"></video></span>
+        <span class="tile__cap"><em>Vela Skateboards</em><b>Red Deck</b></span>
+      </a>
+      <a class="tile tile--d" href="#" data-cursor="Watch" data-play="assets/video/underpass.mp4" data-title="Soft Gold" data-sub="Maison Lune">
+        <span class="tile__media"><video data-src="assets/video/underpass.mp4" poster="assets/img/underpass.webp" muted loop playsinline preload="none"></video></span>
+        <span class="tile__cap"><em>Maison Lune</em><b>Soft Gold</b></span>
+      </a>
+      <a class="tile tile--e" href="#" data-cursor="Watch" data-play="assets/video/watch-macro.mp4" data-title="Time, Kept" data-sub="Halvorsen Watches">
+        <span class="tile__media"><video data-src="assets/video/watch-macro.mp4" poster="assets/img/watch-macro.webp" muted loop playsinline preload="none"></video></span>
+        <span class="tile__cap"><em>Halvorsen Watches</em><b>Time, Kept</b></span>
+      </a>
+      <a class="tile tile--f" href="#" data-cursor="Watch" data-play="assets/video/flames.mp4" data-title="The Pass" data-sub="Brasa Kitchen">
+        <span class="tile__media"><video data-src="assets/video/flames.mp4" poster="assets/img/flames.webp" muted loop playsinline preload="none"></video></span>
+        <span class="tile__cap"><em>Brasa Kitchen</em><b>The Pass</b></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 5. DIRECTORS: six clips, a slab on each rolls through the director's disciplines -->
+  <section class="dirs" id="directors" aria-label="Directors">
+    <div class="sec-head"><p class="lbl">(03) Directors</p><p class="sec-head__t">Six who shoot like they <i>mean it.</i></p><p class="lbl">06 on the roster</p></div>
+    <div class="dirs__grid">
+      <a class="card tile" href="#" data-cursor="Reel" data-play="assets/video/bball-street.mp4" data-title="Ines Okafor" data-sub="Sports, Commercial">
+        <span class="tile__media"><video data-src="assets/video/bball-street.mp4" poster="assets/img/bball-street.webp" muted loop playsinline preload="none"></video><span class="card__plate plates" data-words="Sports|Commercial" aria-hidden="true"></span></span>
+        <span class="tile__cap"><em>Sports, Commercial</em><b>Ines Okafor</b></span>
+      </a>
+      <a class="card tile" href="#" data-cursor="Reel" data-play="assets/video/tailor.mp4" data-title="Teo Varga" data-sub="Fashion, Campaigns">
+        <span class="tile__media"><video data-src="assets/video/tailor.mp4" poster="assets/img/tailor.webp" muted loop playsinline preload="none"></video><span class="card__plate plates" data-words="Fashion|Campaigns" aria-hidden="true"></span></span>
+        <span class="tile__cap"><em>Fashion, Campaigns</em><b>Teo Varga</b></span>
+      </a>
+      <a class="card tile" href="#" data-cursor="Reel" data-play="assets/video/golden-woman.mp4" data-title="Mara Lindqvist" data-sub="Branded film, Feature">
+        <span class="tile__media"><video data-src="assets/video/golden-woman.mp4" poster="assets/img/golden-woman.webp" muted loop playsinline preload="none"></video><span class="card__plate plates" data-words="Branded film|Feature" aria-hidden="true"></span></span>
+        <span class="tile__cap"><em>Branded film, Feature</em><b>Mara Lindqvist</b></span>
+      </a>
+      <a class="card tile" href="#" data-cursor="Reel" data-play="assets/video/field.mp4" data-title="Sol Akande" data-sub="Music, Youth">
+        <span class="tile__media"><video data-src="assets/video/field.mp4" poster="assets/img/field.webp" muted loop playsinline preload="none"></video><span class="card__plate plates" data-words="Music|Youth" aria-hidden="true"></span></span>
+        <span class="tile__cap"><em>Music, Youth</em><b>Sol Akande</b></span>
+      </a>
+      <a class="card tile" href="#" data-cursor="Reel" data-play="assets/video/leather.mp4" data-title="Ruben Castell" data-sub="Craft, Heritage">
+        <span class="tile__media"><video data-src="assets/video/leather.mp4" poster="assets/img/leather.webp" muted loop playsinline preload="none"></video><span class="card__plate plates" data-words="Craft|Heritage" aria-hidden="true"></span></span>
+        <span class="tile__cap"><em>Craft, Heritage</em><b>Ruben Castell</b></span>
+      </a>
+      <a class="card tile" href="#" data-cursor="Reel" data-play="assets/video/perfumer.mp4" data-title="Yuki Hale" data-sub="Luxury, Beauty">
+        <span class="tile__media"><video data-src="assets/video/perfumer.mp4" poster="assets/img/perfumer.webp" muted loop playsinline preload="none"></video><span class="card__plate plates" data-words="Luxury|Beauty" aria-hidden="true"></span></span>
+        <span class="tile__cap"><em>Luxury, Beauty</em><b>Yuki Hale</b></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 6. CONTACT: section head + rolling slabs + one big link -->
+  <section class="cta" id="contact">
+    <div class="sec-head"><p class="lbl">(04) Contact</p><p class="sec-head__t">New work, <i>always.</i></p><p class="lbl">Los Angeles, CA</p></div>
+    <div class="cta__plates plates" data-plates="Got a|Story?" data-words-last="Story?|Script?|Idea?|Brand?" aria-label="Got a story?"></div>
+    <div class="cta__grid">
+      <a class="cta__link" href="mailto:hello@feral.film"><span data-roll>hello@feral.film</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <p class="lbl"><span>New business</span>Ana Ruiz<br>+1 323 555 0147</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__cols">
+    <p class="lbl">Smart stories. Bold execution. No cages.</p>
+    <nav class="lbl" aria-label="Site"><a href="#top" data-roll>Work</a><a href="#directors" data-roll>Directors</a><a href="#studio" data-roll>Studio</a></nav>
+    <nav class="lbl" aria-label="Social"><a href="#" data-roll>Instagram</a><a href="#" data-roll>Vimeo</a><a href="#" data-roll>LinkedIn</a></nav>
+    <div class="lbl"><a href="mailto:hello@feral.film" data-roll>hello@feral.film</a><p>1418 Willow Brook Ave<br>Los Angeles, CA 90029</p></div>
+  </div>
+  <div class="foot__mark plates" data-plates="We|Are|Feral" data-tag="Feral Pictures|made in|Los Angeles" aria-hidden="true"></div>
+  <div class="foot__base lbl"><span>&copy; 2026 Feral Pictures</span><span>Footage: Pexels. Music: Mixkit</span><a href="#top" data-roll>Back to top</a></div>
+</footer>
+
+<dialog class="player" aria-label="Video player">
+  <button class="player__close lbl" type="button" data-roll>Close</button>
+  <video class="player__video" playsinline tabindex="-1"></video>
+  <audio class="player__audio" src="assets/audio/feral-theme.m4a" loop preload="none"></audio>
+  <div class="player__bar">
+    <p class="player__title"><span class="player__t">Feral</span> <em class="player__s"></em></p>
+    <div class="player__ctrls">
+      <button class="player__sound lbl" type="button" data-roll>Sound off</button>
+      <button class="player__toggle" type="button" aria-label="Pause">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="player__track" cx="24" cy="24" r="22"/><circle class="player__prog" cx="24" cy="24" r="22" pathLength="1"/></svg>
+        <span class="player__tc lbl">00:00</span>
+      </button>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
